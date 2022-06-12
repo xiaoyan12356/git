@@ -1,0 +1,28 @@
+1.git 和svn区别：
+Git 在每个端都保留了所有的版本历史，而 SVN 只在服务器 中保存了历史版本记录，在客户端是没有保存本地版本历史的。
+在 Gi t 中每个客户端都可以自由创建分支，而 SVN 中必须由服务端创建，客户端才能拉取，但实际工作中很少会在服 务端执行 SVN 命令的
+没有网络的情况下， Git 依然可以提交代码，而 SVN 则不行，因为必须连 接服务器才可以提交....
+
+2.git 基础命令
+检查改动过后的文件 git status
+撤销编辑更改过的文件  git checkout  文件名
+文件未执行add 之前为工作区 ，执行add 后添加到暂存区 
+提交文件到本地仓库  git commit . -m "备注消息"   . 代表选择所有文件或目录，也可以指定某一个文件
+git push  推送到远程地址
+
+3.
+编辑文件后查看进行了哪些操作 git diff
+而添加到暂存区后只能通过与本地库最近一次  commit 的内容进行比较  git  diff --cached  文件名
+与历史版本记录进行比较  git log 获取到历史提交的hash值   git diff hash值
+比较两个历史版本  git diff hash1  hash2
+
+4.
+文件权限不同导致拉取冲突解决：
+当前版本库忽略文件权限：git config core.filemode false
+让电脑上所有版本库，都忽略文件权限 git config --global core.fileMode false 
+cat .git/config  fileMode false 则代表配置成功
+
+
+
+
+
