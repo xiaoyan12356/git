@@ -45,4 +45,8 @@ git checkout -b 分支名  新建本地分支
 查看当前分支和另外分支有哪些文件不一样(当前分支为dev)  git diff master dev --stat
 显示分支差异文件的细节： git diff master dev   文件名
 显示全部文件的不同: git diff master dev  
+比较提交分支之间差异： git log  分支 ... 分支 
+查看各记录存在于那些分支上: git log --left-right  分支 ...分支  以（<  > 区分）
 
+
+1233
