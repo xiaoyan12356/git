@@ -35,8 +35,14 @@ test中有一个文件不需要忽略  添加 !/test/index.txt
 查看本地和远程的所有分支   git branch -a   以remotes 都不是在本地的
 git checkout 分支名   切换分支。也导入远程分支作用，当本地不存在这个分支，会自动找到远程对应的分支然后再本地创建。
 git checkout -b 分支名  新建本地分支
-在本地新建的分支第一次推送不能直接使用 git push  应该使用 git  push --set-upstram origin  分支名
+在本地新建的分支第一次推送不能直接使用 git push  应该使用 git  push --set-upstream origin  分支名
 合并分支  test 分支修复bug成功，现在将test分支合并到master分支中去  1.切换 git check master  2.合并 git merge test  3.git log 查看
 分支删除 git branch -d test  
 强制删除  git branch -D test
+
+
+7.查看不同分支差异
+查看当前分支和另外分支有哪些文件不一样(当前分支为dev)  git diff master dev --stat
+显示分支差异文件的细节： git diff master dev   文件名
+显示全部文件的不同: git diff master dev  
 
