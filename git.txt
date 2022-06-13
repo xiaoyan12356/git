@@ -25,7 +25,9 @@ cat .git/config  fileMode false 则代表配置成功
 
 
 5.忽略某些自动生成文件的提交 如.idea
-在.git 中添加.gitgnore文件  写入 .idea
+在目录中添加.gitignore文件  写入 .idea
+忽略文件夹 在文件夹中添加 test/*
+test中有一个文件不需要忽略  添加 !/test/index.txt 
 
 
 6.分支
