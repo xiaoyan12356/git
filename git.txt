@@ -49,4 +49,10 @@ git checkout -b 分支名  新建本地分支
 查看各记录存在于那些分支上: git log --left-right  分支 ...分支  以（<  > 区分）
 
 
-1233
+8.回滚
+commit 后发现错误需要进行回滚   git reset  HEAD^
+回滚到指定提交记录  git log   git  reset  编号
+
+
+9.清理分支
+清理远程分支： git push origin --delete  分支
