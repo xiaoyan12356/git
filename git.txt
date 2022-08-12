@@ -56,3 +56,9 @@ commit 后发现错误需要进行回滚   git reset  HEAD^
 
 9.清理分支
 清理远程分支： git push origin --delete  分支
+
+
+
+
+
+第三方
