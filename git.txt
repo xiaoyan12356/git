@@ -27,6 +27,8 @@ cat .git/config  fileMode false 则代表配置成功
 5.忽略某些自动生成文件的提交 如.idea
 在.git 中添加.gitgnore文件  写入 .idea
 
+放到
+
 
 6.分支
 查看本地分支  git branch  
